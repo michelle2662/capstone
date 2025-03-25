@@ -1,0 +1,10 @@
+
+Initial idea:
+
+1. A local city explorer: App allows user to build and discover nearby events, local attractions, restaurants and experiences. Allows user to build and make their itineraries. Also allow user to save locations or events. This app combines external APIs to discover local events and will have a custom backend to hold data (2nd idea to most likely do)
+
+2. App for caregivers: Helps caregiver manage and collaborate on taking care of their loved ones. User can manage profiles and see their upcoming appointments, track medications, reach out to doctors, and etc.
+(will most likely do this one)
+
+
+3. Fitness and self care: Wellness app where user can set daily or weekly fitness goals. Users can log workouts, water intake, mood, sleep. Users can track their progress with graphs and summaries. Also Users can get nudges/reminders to log their informations

@@ -1,0 +1,55 @@
+Project proposal: City Explorer
+
+Focus: This will be a full-stack application with an even focus on both front end and back end. Front end will be used for providing an interactive user experience for discovering local events/places. Backend will be used for handling user data, authentication, and itinerary saving.
+
+Type: Web application
+
+Goal: The goal is to help users find events to do in their city and allow them to create personalized itineraries. Users can also invite friends to create an itinerary together. 
+
+Users: The demographic of users will be young professionals and adults. People who are looking for experiences and events happening in their city. Or tourists visiting a new city looking for things to do.
+
+Data: 
+Yelp Fusion API for restaurants and attractions
+Eventbrite API for local events
+Custom API can be used to manage users, get saved itineraries, get favorites attractions/events
+Google calendar API
+
+Database schema:
+
+User: id (UUID, primary key), username (String, Unique) , email (String, unique, required)
+Event: id (UUID, primary key), user_id (UUID, foreign key to user), title (String), date (Date)
+Itinerary_Items: id (UUID, primary key), itinerary_id (UUID, foreign key to itineraries), name (String), type (String), start_time (Time), notes (Text), itinerary_index (Integer)
+Favorites: id (UUID, primary key) , user_id (UUID, Foreign key to user), name (id, foreign key to event)
+
+Potential API issue:
+Inconsistent data from yelp fusion API and eventbrite API
+Rate limits: the number of free API calls to yelp and eventbrite API may not be enough
+API endpoints might be changed in the future
+
+App functionality
+User authentication
+Ability to search for events, restaurants and attractions in city
+Save favorite events and build custom itinerary
+Organize itinerary by time/ type
+Share itinerary with friends
+View saved itineraries and edit
+Save itinerary to google calendar
+User Flor:
+User visits website
+Search for places/events by category, location, or time
+Sign up or log in if wanting to create itinerary or save favorites
+View or organize itinerary
+Share itinerary to friends to collaborate
+
+What makes it more than a CRUD app?
+The web application is more than a CRUD app as it integrates multiple APIs from different websites. It allows users to generate their own plans and invite collaborators if needed.
+
+Stretch goals:
+
+Google Maps integration to visualize itinerary distance
+AI suggestions based on history
+
+
+
+
+
